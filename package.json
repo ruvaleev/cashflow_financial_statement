@@ -1,0 +1,24 @@
+{
+  "name": "cashflow_financial_statement",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/register": "^7.12.1",
+    "parcel": "^1.12.4"
+  }
+}
