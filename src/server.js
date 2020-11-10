@@ -1,5 +1,6 @@
 require('@babel/register')();
 
+['.css', '.less', '.sass', '.ttf', '.woff', '.woff2'].forEach((ext) => require.extensions[ext] = () => {});
 const express = require('express');
 const app = express();
 
