@@ -1,11 +1,14 @@
-import React from  'react';
+import { connect } from 'react-redux';
 
-import '../../assets/stylesheets/index.css';
+import Statement from './Statement';
+import { addIncome } from '../../redux/slices/incomes';
 
-function Statement() {
-  return (
-    <div>Statement Component here updated nahui</div>
-  )
-}
+const mapStateToProps = (state) => ({
+  incomes: state.incomesReducer.incomes
+})
 
-export default Statement;
+const mapDispatchToProps = (dispatch) => ({
+  addIncome: (data) => dispatch(addIncome(data))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Statement);
