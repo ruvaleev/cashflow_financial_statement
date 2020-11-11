@@ -7,7 +7,7 @@ import Statement from './components/Statement';
 function App() {
   return (
     <Provider store={store}>
-      <Statement statement={statement.income}/>
+      <Statement/>
     </Provider>
   )
 }

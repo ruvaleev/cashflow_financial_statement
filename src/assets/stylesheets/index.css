@@ -44,13 +44,35 @@ div#financialStatement {
   background-color: black;
   font-style: italic;
   text-align: center;
+}
+
+.font-20px {
   font-size: 20px;
 }
 
-.blackButton {
+.font-18px {
   font-size: 18px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+.blackButton {
   border: 0;
   cursor: pointer;
+}
+
+.noLeftMargin {
+  margin-left: 0 !important;
+}
+
+.noRightMargin {
+  margin-right: 0 !important;
+}
+
+.undoRedoPanel button {
+  margin: 0.1em;
 }
 
 .newIncomeForm {
