@@ -1,14 +1,16 @@
 import React from  'react';
 
 import '../../assets/stylesheets/index.css';
-import IncomeForm from '../IncomeForm';
+import ControlPanel from '../ControlPanel';
 import IncomesStatement from '../IncomesStatement';
+import ExpensesStatement from '../ExpensesStatement';
 
 function Statement() {
   return (
     <>
-      <IncomeForm/>
+      <ControlPanel/>
       <IncomesStatement/>
+      <ExpensesStatement/>
     </>
   )
 }

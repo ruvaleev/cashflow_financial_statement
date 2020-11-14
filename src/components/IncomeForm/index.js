@@ -1,13 +1,25 @@
-import { connect } from 'react-redux';
-import { ActionCreators } from 'redux-undo';
+import React from  'react';
 
-import { addIncome } from '../../redux/slices/incomes';
-import IncomeForm from './IncomeForm';
+import { FormRow, FormSelectRow } from '../shared/formsElements';
 
-const mapDispatchToProps = (dispatch) => ({
-  addIncome: (data) => dispatch(addIncome(data)),
-  undo: () => dispatch(ActionCreators.undo()),
-  redo: () => dispatch(ActionCreators.redo())
-})
+function IncomeForm({onSubmit}) {
+  return (
+    <div className='incomeForm'>
+      <form className='bordered' onSubmit={onSubmit}>
+        <FormRow type='text' name='title' label='Статья дохода' required={true} className='bordered withoutTopBorder'/>
+        <FormRow type='number' name='value' label='Сумма' className='bordered withoutTopBorder'/>
+        <FormSelectRow
+          name='isPassive'
+          label='Доход пассивный?'
+          className='bordered withoutTopBorder'
+          options={[
+            { value: true, title: 'Да' },
+            { value: false, title: 'Нет' }
+          ]}/>
+        <button className='blackTitle blackButton font-18px'>Завести доход</button>
+      </form>
+    </div>
+  )
+}
 
-export default connect(null, mapDispatchToProps)(IncomeForm);
+export default IncomeForm;

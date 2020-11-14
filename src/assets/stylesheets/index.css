@@ -86,29 +86,34 @@ div#financialStatement {
   margin: 0.1em;
 }
 
-.incomeForm {
+.controlPanel {
   position: fixed;
   right: 2em;
   flex-direction: column;
 }
 
-.incomeForm div {
+.controlPanel div {
   display: flex;
   justify-content: space-between;
 }
 
-.incomeForm div label {
+.controlPanel div label {
   margin: 0 1em 0 0;
 }
 
-.incomeForm input, .incomeForm select {
+.controlPanel input, .controlPanel select {
   width: 200px;
   padding: 0;
   margin-right: -1px;
 }
 
-.incomeForm select {
+.controlPanel select {
   width: 202px;
+}
+
+.controlPanel form {
+  width: 100%;
+  margin: 1em 0;
 }
 
 select {

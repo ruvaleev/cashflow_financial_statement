@@ -5,11 +5,11 @@ import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 
 import Store from '../shared/Store';
-import IncomesStatement from '../../components/IncomesStatement';
+import ExpensesStatement from '../../components/ExpensesStatement';
 
 const mockStore = configureStore([]);
 
-describe('IncomesStatement', () => {
+describe('ExpensesStatement', () => {
   let store;
   let component;
   
@@ -18,12 +18,12 @@ describe('IncomesStatement', () => {
 
     component = render(
       <Provider store={store}>
-        <IncomesStatement/>
+        <ExpensesStatement/>
       </Provider>
     )
   });
 
-  it('renders IncomesStatement correctly', () => {
+  it('renders ExpensesStatement correctly', () => {
     expect(component).toMatchSnapshot();
   });
 });

@@ -6,12 +6,12 @@ import configureStore from 'redux-mock-store';
 import { ActionCreators } from 'redux-undo';
 
 import Store from '../shared/Store';
-import IncomeForm from '../../components/IncomeForm';
+import ControlPanel from '../../components/ControlPanel';
 
 const mockStore = configureStore([]);
 const leftClick = { button: 0 };
 
-describe('IncomeForm', () => {
+describe('ControlPanel', () => {
   let store;
   let component;
   
@@ -21,12 +21,12 @@ describe('IncomeForm', () => {
 
     component = render(
       <Provider store={store}>
-        <IncomeForm/>
+        <ControlPanel/>
       </Provider>
     )
   });
 
-  it('renders IncomeForm correctly', () => {
+  it('renders ControlPanel correctly', () => {
     expect(component).toMatchSnapshot();
   });
 
