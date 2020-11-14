@@ -260,14 +260,20 @@ Object {
           class="rightPart flex bordered"
         >
           <div>
-            <div>
-              <strong>
-                Общий расход: 
-              </strong>
-              300
-            </div>
+            <strong>
+              Общий расход: 
+            </strong>
+            300
           </div>
         </div>
+      </div>
+      <div
+        class="cashFlowResult font-20px"
+      >
+        <strong>
+          Ежемесячный денежный поток: 
+        </strong>
+        200
       </div>
     </div>
   </body>,
@@ -527,14 +533,20 @@ Object {
         class="rightPart flex bordered"
       >
         <div>
-          <div>
-            <strong>
-              Общий расход: 
-            </strong>
-            300
-          </div>
+          <strong>
+            Общий расход: 
+          </strong>
+          300
         </div>
       </div>
+    </div>
+    <div
+      class="cashFlowResult font-20px"
+    >
+      <strong>
+        Ежемесячный денежный поток: 
+      </strong>
+      200
     </div>
   </div>,
   "debug": [Function],

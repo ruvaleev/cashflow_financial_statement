@@ -16,10 +16,8 @@ function ExpensesTotal({expenses}) {
 
   return (
     <div>
-      <div>
-        <strong>Общий расход: </strong>
-        {totalExpenses}
-      </div>
+      <strong>Общий расход: </strong>
+      {totalExpenses}
     </div>
   )
 }

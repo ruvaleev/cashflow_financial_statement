@@ -4,6 +4,7 @@ import '../../assets/stylesheets/index.css';
 import ControlPanel from '../ControlPanel';
 import IncomesStatement from '../IncomesStatement';
 import ExpensesStatement from '../ExpensesStatement';
+import Total from '../Total';
 
 function Statement() {
   return (
@@ -11,6 +12,7 @@ function Statement() {
       <ControlPanel/>
       <IncomesStatement/>
       <ExpensesStatement/>
+      <Total/>
     </>
   )
 }

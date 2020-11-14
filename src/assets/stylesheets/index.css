@@ -130,3 +130,9 @@ select {
 .withoutTopBorder {
   border-top: 0;
 }
+
+.cashFlowResult {
+  text-align: center;
+  font-style: italic;
+  margin: 1em;
+}
