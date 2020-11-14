@@ -1,9 +1,16 @@
-import { connect } from 'react-redux';
+import React from  'react';
 
-import Statement from './Statement';
+import '../../assets/stylesheets/index.css';
+import IncomeForm from '../IncomeForm';
+import IncomesStatement from '../IncomesStatement';
 
-const mapStateToProps = (state) => ({
-  incomes: state.incomesReducer.present.incomes
-})
+function Statement() {
+  return (
+    <>
+      <IncomeForm/>
+      <IncomesStatement/>
+    </>
+  )
+}
 
-export default connect(mapStateToProps)(Statement);
+export default Statement;

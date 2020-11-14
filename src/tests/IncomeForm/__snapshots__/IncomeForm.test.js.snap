@@ -11,7 +11,9 @@ Object {
         <form
           class="bordered"
         >
-          <div>
+          <div
+            class="flex"
+          >
             <label
               for="title"
             >
@@ -24,7 +26,9 @@ Object {
               type="text"
             />
           </div>
-          <div>
+          <div
+            class="flex"
+          >
             <label
               for="value"
             >
@@ -88,7 +92,9 @@ Object {
       <form
         class="bordered"
       >
-        <div>
+        <div
+          class="flex"
+        >
           <label
             for="title"
           >
@@ -101,7 +107,9 @@ Object {
             type="text"
           />
         </div>
-        <div>
+        <div
+          class="flex"
+        >
           <label
             for="value"
           >

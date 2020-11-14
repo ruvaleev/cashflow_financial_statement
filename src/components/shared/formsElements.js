@@ -2,7 +2,7 @@ import React from  'react';
 
 export function FormRow({type, name, label, ...inputProps}) {
   return (
-    <div>
+    <div className='flex'>
       <label htmlFor={name}>{label}</label>
       <input type={type} name={name} {...inputProps}/>
     </div>

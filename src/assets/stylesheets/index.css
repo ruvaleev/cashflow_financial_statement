@@ -1,5 +1,4 @@
 body {
-  display: flex;
   width: 100%;
   justify-content: center;
   height: 100vh;
@@ -7,9 +6,21 @@ body {
   font-family: arial;
 }
 
-.tableRow {
+.flex {
   display: flex;
+}
+
+.leftPart {
   width: 50%;
+}
+
+.rightPart {
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+
+.tableRow {
   justify-content: space-around;
 }
 
@@ -78,7 +89,6 @@ div#financialStatement {
 .incomeForm {
   position: fixed;
   right: 2em;
-  display: flex;
   flex-direction: column;
 }
 

@@ -10,7 +10,7 @@ function IncomeForm({addIncome, undo, redo}) {
         addIncome({
           title: e.target.title.value,
           value: e.target.value.value,
-          isPassive: e.target.isPassive.value
+          isPassive: e.target.isPassive.value == 'true'
         }),
         e.target.title.value = '',
         e.target.value.value = '';
