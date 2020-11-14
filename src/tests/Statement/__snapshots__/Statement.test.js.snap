@@ -128,152 +128,168 @@ Object {
             Повторить
           </button>
         </div>
+        <button
+          class="blackTitle blackButton font-16px"
+        >
+          Сохранить PDF
+        </button>
       </div>
       <div
-        class="blackTitle font-20px"
-      >
-        Доходы
-      </div>
-      <div
-        class="tableContent flex"
+        id="statementDocumentContainer"
       >
         <div
-          class="leftPart"
+          id="statementDocument"
         >
+          <h1>
+            Отчет о Доходах и Расходах
+          </h1>
           <div
-            class="flex tableRow tableHeader bordered"
+            class="blackTitle font-20px"
           >
-            <div
-              class="leftSide"
-            >
-              Описание
-            </div>
-            <div
-              class="rightSide"
-            >
-              Доход
-            </div>
+            Доходы
           </div>
           <div
-            class="flex tableRow bordered withoutTopBorder"
+            class="tableContent flex"
           >
             <div
-              class="leftSide"
+              class="leftPart"
             >
-              зарплата
+              <div
+                class="flex tableRow tableHeader bordered"
+              >
+                <div
+                  class="leftSide"
+                >
+                  Описание
+                </div>
+                <div
+                  class="rightSide"
+                >
+                  Доход
+                </div>
+              </div>
+              <div
+                class="flex tableRow bordered withoutTopBorder"
+              >
+                <div
+                  class="leftSide"
+                >
+                  зарплата
+                </div>
+                <div
+                  class="rightSide"
+                >
+                  300
+                </div>
+              </div>
+              <div
+                class="flex tableRow bordered withoutTopBorder"
+              >
+                <div
+                  class="leftSide"
+                >
+                  недвижимость
+                </div>
+                <div
+                  class="rightSide"
+                >
+                  200
+                </div>
+              </div>
             </div>
             <div
-              class="rightSide"
+              class="rightPart flex bordered"
             >
-              300
-            </div>
-          </div>
-          <div
-            class="flex tableRow bordered withoutTopBorder"
-          >
-            <div
-              class="leftSide"
-            >
-              недвижимость
-            </div>
-            <div
-              class="rightSide"
-            >
-              200
-            </div>
-          </div>
-        </div>
-        <div
-          class="rightPart flex bordered"
-        >
-          <div>
-            <div>
-              <strong>
-                Пассивный доход: 
-              </strong>
-              200
-            </div>
-            <div>
-              <strong>
-                Общий доход: 
-              </strong>
-              500
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="blackTitle font-20px"
-      >
-        Расходы
-      </div>
-      <div
-        class="tableContent flex"
-      >
-        <div
-          class="leftPart"
-        >
-          <div
-            class="flex tableRow tableHeader bordered"
-          >
-            <div
-              class="leftSide"
-            >
-              Описание
-            </div>
-            <div
-              class="rightSide"
-            >
-              Расход
+              <div>
+                <div>
+                  <strong>
+                    Пассивный доход: 
+                  </strong>
+                  200
+                </div>
+                <div>
+                  <strong>
+                    Общий доход: 
+                  </strong>
+                  500
+                </div>
+              </div>
             </div>
           </div>
           <div
-            class="flex tableRow bordered withoutTopBorder"
+            class="blackTitle font-20px"
+          >
+            Расходы
+          </div>
+          <div
+            class="tableContent flex"
           >
             <div
-              class="leftSide"
+              class="leftPart"
             >
-              ипотека
+              <div
+                class="flex tableRow tableHeader bordered"
+              >
+                <div
+                  class="leftSide"
+                >
+                  Описание
+                </div>
+                <div
+                  class="rightSide"
+                >
+                  Расход
+                </div>
+              </div>
+              <div
+                class="flex tableRow bordered withoutTopBorder"
+              >
+                <div
+                  class="leftSide"
+                >
+                  ипотека
+                </div>
+                <div
+                  class="rightSide"
+                >
+                  200
+                </div>
+              </div>
+              <div
+                class="flex tableRow bordered withoutTopBorder"
+              >
+                <div
+                  class="leftSide"
+                >
+                  кредит за обучение
+                </div>
+                <div
+                  class="rightSide"
+                >
+                  100
+                </div>
+              </div>
             </div>
             <div
-              class="rightSide"
+              class="rightPart flex bordered"
             >
-              200
+              <div>
+                <strong>
+                  Общий расход: 
+                </strong>
+                300
+              </div>
             </div>
           </div>
           <div
-            class="flex tableRow bordered withoutTopBorder"
+            class="cashFlowResult font-20px"
           >
-            <div
-              class="leftSide"
-            >
-              кредит за обучение
-            </div>
-            <div
-              class="rightSide"
-            >
-              100
-            </div>
-          </div>
-        </div>
-        <div
-          class="rightPart flex bordered"
-        >
-          <div>
             <strong>
-              Общий расход: 
+              Ежемесячный денежный поток: 
             </strong>
-            300
+            200
           </div>
         </div>
-      </div>
-      <div
-        class="cashFlowResult font-20px"
-      >
-        <strong>
-          Ежемесячный денежный поток: 
-        </strong>
-        200
       </div>
     </div>
   </body>,
@@ -401,152 +417,168 @@ Object {
           Повторить
         </button>
       </div>
+      <button
+        class="blackTitle blackButton font-16px"
+      >
+        Сохранить PDF
+      </button>
     </div>
     <div
-      class="blackTitle font-20px"
-    >
-      Доходы
-    </div>
-    <div
-      class="tableContent flex"
+      id="statementDocumentContainer"
     >
       <div
-        class="leftPart"
+        id="statementDocument"
       >
+        <h1>
+          Отчет о Доходах и Расходах
+        </h1>
         <div
-          class="flex tableRow tableHeader bordered"
+          class="blackTitle font-20px"
         >
-          <div
-            class="leftSide"
-          >
-            Описание
-          </div>
-          <div
-            class="rightSide"
-          >
-            Доход
-          </div>
+          Доходы
         </div>
         <div
-          class="flex tableRow bordered withoutTopBorder"
+          class="tableContent flex"
         >
           <div
-            class="leftSide"
+            class="leftPart"
           >
-            зарплата
+            <div
+              class="flex tableRow tableHeader bordered"
+            >
+              <div
+                class="leftSide"
+              >
+                Описание
+              </div>
+              <div
+                class="rightSide"
+              >
+                Доход
+              </div>
+            </div>
+            <div
+              class="flex tableRow bordered withoutTopBorder"
+            >
+              <div
+                class="leftSide"
+              >
+                зарплата
+              </div>
+              <div
+                class="rightSide"
+              >
+                300
+              </div>
+            </div>
+            <div
+              class="flex tableRow bordered withoutTopBorder"
+            >
+              <div
+                class="leftSide"
+              >
+                недвижимость
+              </div>
+              <div
+                class="rightSide"
+              >
+                200
+              </div>
+            </div>
           </div>
           <div
-            class="rightSide"
+            class="rightPart flex bordered"
           >
-            300
-          </div>
-        </div>
-        <div
-          class="flex tableRow bordered withoutTopBorder"
-        >
-          <div
-            class="leftSide"
-          >
-            недвижимость
-          </div>
-          <div
-            class="rightSide"
-          >
-            200
-          </div>
-        </div>
-      </div>
-      <div
-        class="rightPart flex bordered"
-      >
-        <div>
-          <div>
-            <strong>
-              Пассивный доход: 
-            </strong>
-            200
-          </div>
-          <div>
-            <strong>
-              Общий доход: 
-            </strong>
-            500
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="blackTitle font-20px"
-    >
-      Расходы
-    </div>
-    <div
-      class="tableContent flex"
-    >
-      <div
-        class="leftPart"
-      >
-        <div
-          class="flex tableRow tableHeader bordered"
-        >
-          <div
-            class="leftSide"
-          >
-            Описание
-          </div>
-          <div
-            class="rightSide"
-          >
-            Расход
+            <div>
+              <div>
+                <strong>
+                  Пассивный доход: 
+                </strong>
+                200
+              </div>
+              <div>
+                <strong>
+                  Общий доход: 
+                </strong>
+                500
+              </div>
+            </div>
           </div>
         </div>
         <div
-          class="flex tableRow bordered withoutTopBorder"
+          class="blackTitle font-20px"
+        >
+          Расходы
+        </div>
+        <div
+          class="tableContent flex"
         >
           <div
-            class="leftSide"
+            class="leftPart"
           >
-            ипотека
+            <div
+              class="flex tableRow tableHeader bordered"
+            >
+              <div
+                class="leftSide"
+              >
+                Описание
+              </div>
+              <div
+                class="rightSide"
+              >
+                Расход
+              </div>
+            </div>
+            <div
+              class="flex tableRow bordered withoutTopBorder"
+            >
+              <div
+                class="leftSide"
+              >
+                ипотека
+              </div>
+              <div
+                class="rightSide"
+              >
+                200
+              </div>
+            </div>
+            <div
+              class="flex tableRow bordered withoutTopBorder"
+            >
+              <div
+                class="leftSide"
+              >
+                кредит за обучение
+              </div>
+              <div
+                class="rightSide"
+              >
+                100
+              </div>
+            </div>
           </div>
           <div
-            class="rightSide"
+            class="rightPart flex bordered"
           >
-            200
+            <div>
+              <strong>
+                Общий расход: 
+              </strong>
+              300
+            </div>
           </div>
         </div>
         <div
-          class="flex tableRow bordered withoutTopBorder"
+          class="cashFlowResult font-20px"
         >
-          <div
-            class="leftSide"
-          >
-            кредит за обучение
-          </div>
-          <div
-            class="rightSide"
-          >
-            100
-          </div>
-        </div>
-      </div>
-      <div
-        class="rightPart flex bordered"
-      >
-        <div>
           <strong>
-            Общий расход: 
+            Ежемесячный денежный поток: 
           </strong>
-          300
+          200
         </div>
       </div>
-    </div>
-    <div
-      class="cashFlowResult font-20px"
-    >
-      <strong>
-        Ежемесячный денежный поток: 
-      </strong>
-      200
     </div>
   </div>,
   "debug": [Function],

@@ -10,9 +10,14 @@ function Statement() {
   return (
     <>
       <ControlPanel/>
-      <IncomesStatement/>
-      <ExpensesStatement/>
-      <Total/>
+      <div id='statementDocumentContainer'>
+        <div id='statementDocument'>
+          <h1>Отчет о Доходах и Расходах</h1>
+          <IncomesStatement/>
+          <ExpensesStatement/>
+          <Total/>
+        </div>
+      </div>
     </>
   )
 }

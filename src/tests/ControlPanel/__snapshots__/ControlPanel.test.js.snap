@@ -128,6 +128,11 @@ Object {
             Повторить
           </button>
         </div>
+        <button
+          class="blackTitle blackButton font-16px"
+        >
+          Сохранить PDF
+        </button>
       </div>
     </div>
   </body>,
@@ -255,6 +260,11 @@ Object {
           Повторить
         </button>
       </div>
+      <button
+        class="blackTitle blackButton font-16px"
+      >
+        Сохранить PDF
+      </button>
     </div>
   </div>,
   "debug": [Function],

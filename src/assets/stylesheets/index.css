@@ -6,6 +6,11 @@ body {
   font-family: arial;
 }
 
+h1 {
+  text-align: center;
+  font-style: italic;
+}
+
 .flex {
   display: flex;
 }
@@ -46,7 +51,12 @@ input:invalid {
 }
 
 div#financialStatement {
-  min-width: 800px;
+  min-width: 1000px;
+}
+
+div#statementDocument {
+  margin: 100px;
+  width: 800px;
 }
 
 .blackTitle {
