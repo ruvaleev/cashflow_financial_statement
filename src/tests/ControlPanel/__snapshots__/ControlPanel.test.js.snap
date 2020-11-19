@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlPanel renders ControlPanel correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="controlPanel"
+      >
+        <div
+          class="incomeForm"
+        >
+          <form
+            class="bordered"
+          >
+            <div
+              class="flex"
+            >
+              <label
+                for="title"
+              >
+                Статья дохода
+              </label>
+              <input
+                class="bordered withoutTopBorder"
+                id="title"
+                name="title"
+                required=""
+                type="text"
+              />
+            </div>
+            <div
+              class="flex"
+            >
+              <label
+                for="value"
+              >
+                Сумма
+              </label>
+              <input
+                class="bordered withoutTopBorder"
+                id="value"
+                name="value"
+                type="number"
+              />
+            </div>
+            <div>
+              <label
+                for="isPassive"
+              >
+                Доход пассивный?
+              </label>
+              <select
+                class="bordered withoutTopBorder"
+                id="isPassive"
+                name="isPassive"
+              >
+                <option
+                  value="true"
+                >
+                  Да
+                </option>
+                <option
+                  value="false"
+                >
+                  Нет
+                </option>
+              </select>
+            </div>
+            <button
+              class="blackTitle blackButton font-18px"
+            >
+              Завести доход
+            </button>
+          </form>
+        </div>
+        <div
+          class="undoRedoPanel"
+        >
+          <button
+            class="blackTitle blackButton font-16px noLeftMargin"
+          >
+            Отменить
+          </button>
+          <button
+            class="blackTitle blackButton font-16px noRightMargin"
+          >
+            Повторить
+          </button>
+        </div>
+        <div
+          class="expenseForm"
+        >
+          <form
+            class="bordered"
+          >
+            <div
+              class="flex"
+            >
+              <label
+                for="title"
+              >
+                Статья расхода
+              </label>
+              <input
+                class="bordered withoutTopBorder"
+                id="title"
+                name="title"
+                required=""
+                type="text"
+              />
+            </div>
+            <div
+              class="flex"
+            >
+              <label
+                for="value"
+              >
+                Сумма
+              </label>
+              <input
+                class="bordered withoutTopBorder"
+                id="value"
+                name="value"
+                type="number"
+              />
+            </div>
+            <button
+              class="blackTitle blackButton font-18px"
+            >
+              Завести расход
+            </button>
+          </form>
+        </div>
+        <div
+          class="undoRedoPanel"
+        >
+          <button
+            class="blackTitle blackButton font-16px noLeftMargin"
+          >
+            Отменить
+          </button>
+          <button
+            class="blackTitle blackButton font-16px noRightMargin"
+          >
+            Повторить
+          </button>
+        </div>
+        <button
+          class="blackTitle blackButton font-16px"
+        >
+          Сохранить PDF
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="controlPanel"
+    >
+      <div
+        class="incomeForm"
+      >
+        <form
+          class="bordered"
+        >
+          <div
+            class="flex"
+          >
+            <label
+              for="title"
+            >
+              Статья дохода
+            </label>
+            <input
+              class="bordered withoutTopBorder"
+              id="title"
+              name="title"
+              required=""
+              type="text"
+            />
+          </div>
+          <div
+            class="flex"
+          >
+            <label
+              for="value"
+            >
+              Сумма
+            </label>
+            <input
+              class="bordered withoutTopBorder"
+              id="value"
+              name="value"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              for="isPassive"
+            >
+              Доход пассивный?
+            </label>
+            <select
+              class="bordered withoutTopBorder"
+              id="isPassive"
+              name="isPassive"
+            >
+              <option
+                value="true"
+              >
+                Да
+              </option>
+              <option
+                value="false"
+              >
+                Нет
+              </option>
+            </select>
+          </div>
+          <button
+            class="blackTitle blackButton font-18px"
+          >
+            Завести доход
+          </button>
+        </form>
+      </div>
+      <div
+        class="undoRedoPanel"
+      >
+        <button
+          class="blackTitle blackButton font-16px noLeftMargin"
+        >
+          Отменить
+        </button>
+        <button
+          class="blackTitle blackButton font-16px noRightMargin"
+        >
+          Повторить
+        </button>
+      </div>
+      <div
+        class="expenseForm"
+      >
+        <form
+          class="bordered"
+        >
+          <div
+            class="flex"
+          >
+            <label
+              for="title"
+            >
+              Статья расхода
+            </label>
+            <input
+              class="bordered withoutTopBorder"
+              id="title"
+              name="title"
+              required=""
+              type="text"
+            />
+          </div>
+          <div
+            class="flex"
+          >
+            <label
+              for="value"
+            >
+              Сумма
+            </label>
+            <input
+              class="bordered withoutTopBorder"
+              id="value"
+              name="value"
+              type="number"
+            />
+          </div>
+          <button
+            class="blackTitle blackButton font-18px"
+          >
+            Завести расход
+          </button>
+        </form>
+      </div>
+      <div
+        class="undoRedoPanel"
+      >
+        <button
+          class="blackTitle blackButton font-16px noLeftMargin"
+        >
+          Отменить
+        </button>
+        <button
+          class="blackTitle blackButton font-16px noRightMargin"
+        >
+          Повторить
+        </button>
+      </div>
+      <button
+        class="blackTitle blackButton font-16px"
+      >
+        Сохранить PDF
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
