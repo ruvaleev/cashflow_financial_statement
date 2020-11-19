@@ -8,8 +8,10 @@ import ControlPanel from './ControlPanel';
 const mapDispatchToProps = (dispatch) => ({
   addExpense: (data) => dispatch(addExpense(data)),
   addIncome: (data) => dispatch(addIncome(data)),
-  undo: () => dispatch(ActionCreators.undo()),
-  redo: () => dispatch(ActionCreators.redo())
+  undoExpense: () => dispatch(ActionCreators.undo()),
+  redoExpense: () => dispatch(ActionCreators.redo()),
+  undoIncome: () => dispatch(ActionCreators.undo()),
+  redoIncome: () => dispatch(ActionCreators.redo())
 })
 
 export default connect(null, mapDispatchToProps)(ControlPanel);

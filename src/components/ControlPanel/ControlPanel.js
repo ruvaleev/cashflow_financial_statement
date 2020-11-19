@@ -6,30 +6,15 @@ import UndoRedoPanel from '../UndoRedoPanel'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 
-function ControlPanel({addExpense, addIncome, undo, redo}) {
+function ControlPanel({addExpense, addIncome, undoIncome, redoIncome, undoExpense, redoExpense}) {
   return (
     <div className='controlPanel'>
-      <IncomeForm onSubmit={(e) => {
-        e.preventDefault();
-        addIncome({
-          title: e.target.title.value,
-          value: e.target.value.value,
-          isPassive: e.target.isPassive.value == 'true'
-        }),
-        e.target.title.value = '',
-        e.target.value.value = '';
-      }}/>
-      <ExpenseForm onSubmit={(e) => {
-        e.preventDefault();
-        addExpense({
-          title: e.target.title.value,
-          value: e.target.value.value
-        }),
-        e.target.title.value = '',
-        e.target.value.value = '';
-      }}/>
+      <IncomeForm onSubmit={data => {addIncome({title: data.title, value: data.value, isPassive: data.isPassive})}}/>
+      <UndoRedoPanel redo={redoIncome} undo={undoIncome}/>
 
-      <UndoRedoPanel redo={redo} undo={undo}/>
+      <ExpenseForm onSubmit={data => {addExpense({title: data.title, value: data.value})}}/>
+      <UndoRedoPanel redo={redoExpense} undo={undoExpense}/>
+
       <button onClick={print} className='blackTitle blackButton font-16px'>Сохранить PDF</button>
     </div>
   )

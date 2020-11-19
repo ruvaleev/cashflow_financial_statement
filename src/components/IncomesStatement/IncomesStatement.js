@@ -3,11 +3,21 @@ import React from  'react';
 import { StatementTable } from '../shared/statementElements';
 import { CountValues } from '../shared/commonFunctions';
 
-function IncomesStatement({incomes}) {
+function IncomesStatement({incomes, isLoading, isError, error}) {
   return (
-    <StatementTable dataArray={incomes} tableTitle='Доходы' leftHeader='Описание' rightHeader='Доход'>
-      <IncomeTotal incomes={incomes}/>
-    </StatementTable>
+    <>
+      <StatementTable
+        dataArray={incomes}
+        tableTitle='Доходы'
+        leftHeader='Описание'
+        rightHeader='Доход'
+        isLoading={isLoading}
+        isError={isError}
+        error={error}
+      >
+        <IncomeTotal incomes={incomes}/>
+      </StatementTable>
+    </>
   )
 }
 

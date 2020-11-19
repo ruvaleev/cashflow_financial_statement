@@ -24,6 +24,7 @@ Object {
               </label>
               <input
                 class="bordered withoutTopBorder"
+                id="title"
                 name="title"
                 required=""
                 type="text"
@@ -39,6 +40,7 @@ Object {
               </label>
               <input
                 class="bordered withoutTopBorder"
+                id="value"
                 name="value"
                 type="number"
               />
@@ -51,6 +53,7 @@ Object {
               </label>
               <select
                 class="bordered withoutTopBorder"
+                id="isPassive"
                 name="isPassive"
               >
                 <option
@@ -73,6 +76,20 @@ Object {
           </form>
         </div>
         <div
+          class="undoRedoPanel"
+        >
+          <button
+            class="blackTitle blackButton font-16px noLeftMargin"
+          >
+            Отменить
+          </button>
+          <button
+            class="blackTitle blackButton font-16px noRightMargin"
+          >
+            Повторить
+          </button>
+        </div>
+        <div
           class="expenseForm"
         >
           <form
@@ -88,6 +105,7 @@ Object {
               </label>
               <input
                 class="bordered withoutTopBorder"
+                id="title"
                 name="title"
                 required=""
                 type="text"
@@ -103,6 +121,7 @@ Object {
               </label>
               <input
                 class="bordered withoutTopBorder"
+                id="value"
                 name="value"
                 type="number"
               />
@@ -156,6 +175,7 @@ Object {
             </label>
             <input
               class="bordered withoutTopBorder"
+              id="title"
               name="title"
               required=""
               type="text"
@@ -171,6 +191,7 @@ Object {
             </label>
             <input
               class="bordered withoutTopBorder"
+              id="value"
               name="value"
               type="number"
             />
@@ -183,6 +204,7 @@ Object {
             </label>
             <select
               class="bordered withoutTopBorder"
+              id="isPassive"
               name="isPassive"
             >
               <option
@@ -205,6 +227,20 @@ Object {
         </form>
       </div>
       <div
+        class="undoRedoPanel"
+      >
+        <button
+          class="blackTitle blackButton font-16px noLeftMargin"
+        >
+          Отменить
+        </button>
+        <button
+          class="blackTitle blackButton font-16px noRightMargin"
+        >
+          Повторить
+        </button>
+      </div>
+      <div
         class="expenseForm"
       >
         <form
@@ -220,6 +256,7 @@ Object {
             </label>
             <input
               class="bordered withoutTopBorder"
+              id="title"
               name="title"
               required=""
               type="text"
@@ -235,6 +272,7 @@ Object {
             </label>
             <input
               class="bordered withoutTopBorder"
+              id="value"
               name="value"
               type="number"
             />

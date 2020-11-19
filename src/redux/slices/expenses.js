@@ -1,10 +1,18 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
+import httpClient from '../../components/shared/httpClient';
+
+export const fetchExpenses = createAsyncThunk(
+  'expenses/fetchAll',
+  async() => {
+    const response = await httpClient.get('/expenses');
+
+    return response.data;
+  }
+)
 
 const initialState = {
-  "expenses": [
-    { "id": 0,"title": "ипотека", "value": 200 },
-    { "id": 1,"title": "кредит за обучение", "value": 100 }
-  ]
+  incomes: [], isLoading: false, isError: false, error: null
 };
 
 const expensesSlice = createSlice({
@@ -20,6 +28,22 @@ const expensesSlice = createSlice({
         }
       )
     }
+  },
+  extraReducers: {
+    [fetchExpenses.pending]: (state, action) => ({
+      ...state,
+      isLoading: true
+    }),
+    [fetchExpenses.fulfilled]: (state, action) => ({
+      ...initialState,
+      expenses: action.payload
+    }),
+    [fetchExpenses.rejected]: (state, action) => ({
+      ...state,
+      isLoading: false,
+      isError: true,
+      error: action.payload.error
+    })
   }
 })
 
